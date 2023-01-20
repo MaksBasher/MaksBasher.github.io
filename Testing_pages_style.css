@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+}
+
+/* Styles for the header */
+
+li, a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.85% 8.5%;
+  background-color: black;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.icons_list {
+  list-style: none;
+}
+
+.icons_list li{
+  display: inline-block;
+  padding-right: 61px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding-right: 61px;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 56px;
+  height: 36px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+.small_logo {
+  display: none
+}
+
+.logo_small {
+  display: none;
+}
+
+.main_text {
+  padding: 117px 8.5%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 128px;
+  text-align: center;
+  
+  color: #000000;
+  }
+
+/* Adaptives */
+
+@media screen and (max-width: 1540px) 
+{
+  header {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .icons_list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) 
+{
+  li, a {
+    font-size: 22px;
+  }
+
+  .nav_links li {
+    display: inline-block;
+    padding-right: 45px;
+  }
+
+  .nav_links li {
+    display: inline-block;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 880px) 
+{
+  header {
+    text-align: center;
+  }
+
+  li, a {
+    font-size: 22px;
+  }
+
+  .nav_links li {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 580px) 
+{
+
+  header{
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.85% 0;
+  flex-direction: row;
+  }
+
+  .nav_links li {
+    display: none
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo_small {
+    display: flex;
+  }
+
+  .small_logo{
+    display: flex;
+  }
+
+  .flex_item_header {
+    display: none;
+  }
+}
